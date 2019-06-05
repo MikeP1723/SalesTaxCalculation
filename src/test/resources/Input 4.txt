@@ -1,0 +1,10 @@
+Input 4:
+10 book at 12.49
+1 music CD at 14.99
+12 chocolate bar at 0.85
+1 imported box of chocolates at 10.00
+5 imported bottle of perfume at 47.50
+1 imported bottle of perfume at 27.99
+2 bottle of perfume at 18.99
+1 packet of headache pills at 9.75
+13 box of imported chocolates at 11.25

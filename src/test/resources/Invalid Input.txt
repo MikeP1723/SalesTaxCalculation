@@ -1,0 +1,4 @@
+Invalid Input:
+bookat2.49
+music CD at 14.99
+chocolate bar at 0.85
