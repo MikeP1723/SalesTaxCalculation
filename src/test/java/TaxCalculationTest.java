@@ -18,7 +18,7 @@ import static org.hamcrest.core.StringContains.containsString;
 import static org.junit.Assert.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)
-public class TaxeCalculationTest {
+public class TaxCalculationTest {
 
     @InjectMocks
     CalculateTaxesProcessor processor = new CalculateTaxesProcessor();
@@ -114,17 +114,18 @@ public class TaxeCalculationTest {
 
     }
 
-//    @Test
-//    public void testCustomInputSet() {
-//
-//        String[] file = {resourcesDirectory.getAbsolutePath()+ "/Input 4.txt"};
-//        processor.main(file);
-//
-//        assertThat(outContent.toString(), containsString("1 book : 12.49"));
-//        assertThat(outContent.toString(), containsString("1 music CD : 16.49"));
-//        assertThat(outContent.toString(), containsString("1 chocolate bar : 0.85"));
-//        assertThat(outContent.toString(), containsString("Sales Taxes: 1.50"));
-//        assertThat(outContent.toString(), containsString("Total: 29.83"));
-//
-//    }
+    @Test
+    public void testCustomInputSet() {
+
+        String[] file = {resourcesDirectory.getAbsolutePath()+ "/Input 4.txt"};
+        processor.main(file);
+
+        assertThat(outContent.toString(), containsString("2 book: 24.98"));
+        assertThat(outContent.toString(), containsString("1 bouquet of flowers: 14.29"));
+        assertThat(outContent.toString(), containsString("12 chocolate bar: 10.20"));
+        assertThat(outContent.toString(), containsString("1 packet of headache pills: 9.75"));
+        assertThat(outContent.toString(), containsString("Sales Taxes: 1.30"));
+        assertThat(outContent.toString(), containsString("Total: 59.22"));
+
+    }
 }
