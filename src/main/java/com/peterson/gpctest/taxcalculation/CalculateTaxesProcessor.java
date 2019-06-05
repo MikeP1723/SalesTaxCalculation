@@ -8,6 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * This application will take a txt file path as input and output an itemized reciept with added taxes.
+ * Assumptions:
+ *  1. All valid input lines will be in this format: QTY ITEM_NAME at ITEM_PRICE
+ *  2. The tax rules applied for food, books, and medical items are only within the scope of the items specified in the problem statement.
+ *  3. Any item that is not specified in the problem statement will get taxed as follows:
+ *      a. If the item name contains "imported", tax rate will be 15%.
+ *      b. If the item name does not contain "imported", the tax rate will be 10%.
+ */
 public class CalculateTaxesProcessor {
 
     private static final int SALES_TAX_RATE = 10; // Basic tax rate as defined in the problem statement
