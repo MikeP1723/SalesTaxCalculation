@@ -1,8 +1,7 @@
 # SalesTaxCalculation
-An application that reads item information from a text file and calculated applicable taxes.
+An application that reads item information from a text file and calculates applicable taxes.
 
 To use the application: import as a maven project and run the "package" maven build.
-
 The application can then be run from the standalone jar, or from the IDE.
 
 When you run the application you will be promted to specify the full file path of the input txt file.
